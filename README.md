@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Running Orgrel (Organizational Relationship)
 
-Things you may want to cover:
+Instructions:
 
-* Ruby version
+* Action 1
 
-* System dependencies
+* Action 2
 
-* Configuration
+* Action 3
 
-* Database creation
+Specifications:
 
-* Database initialization
+* Rails version: 5.0.6
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version: 2.2.3 (x86_64-linux)
