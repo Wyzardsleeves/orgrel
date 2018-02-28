@@ -7,7 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
+User.create! :name => 'Stinky', :parent => User.create!(:name => 'Squeeky')
 
+=begin
 User.create!(
   first_name: "Dade",
   last_name: "Murphy",
@@ -84,6 +86,7 @@ User.create!(
   title: "Software Engineer",
   description: Faker::Lorem.paragraph(3, true)
 )
+=end
 
 puts "Seed completed!"
 puts "#{User.count} users created!"

@@ -4,4 +4,6 @@ class User < ApplicationRecord
   validates :description, presence: true
   validates :title, presence: true
 
+  has_ancestry
+
 end
