@@ -1,11 +1,7 @@
 module Api
   module V1
     class UsersController < ApplicationController
-      headers['Access-Control-Allow-Origin'] = '*'
-      headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
-      headers['Access-Control-Request-Method'] = '*'
-      headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-
+      
       def index
         users = User.order('created_at DESC')
         render json: {status: 'Success', message: 'Loaded users', data:users},status: :ok

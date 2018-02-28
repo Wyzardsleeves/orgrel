@@ -15,9 +15,13 @@ gem 'puma', '~> 3.0'
 # Use to add ancestry to users
 gem 'ancestry'
 
-#temp
+#Postges usage for Heroku
 gem 'pg'
 gem 'rails_12factor'
+
+#api privs
+gem 'rack-cors', :require => 'rack/cors'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
