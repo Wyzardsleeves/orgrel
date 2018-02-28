@@ -15,6 +15,9 @@ gem 'puma', '~> 3.0'
 # Use to add ancestry to users
 gem 'ancestry'
 
+#temp
+gem 'pg'
+gem 'rails_12factor'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -35,7 +38,7 @@ end
 
 group :development do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -44,8 +47,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
