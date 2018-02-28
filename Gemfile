@@ -16,8 +16,8 @@ gem 'puma', '~> 3.0'
 gem 'ancestry'
 
 #Postges usage for Heroku
-gem 'pg'
-gem 'rails_12factor'
+#gem 'pg'
+#gem 'rails_12factor'
 
 #api privs
 gem 'rack-cors', :require => 'rack/cors'
@@ -42,7 +42,7 @@ end
 
 group :development do
   # Use sqlite3 as the database for Active Record
-  #gem 'sqlite3'
+  gem 'sqlite3'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -51,7 +51,8 @@ group :development do
 end
 
 group :production do
-
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
