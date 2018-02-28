@@ -8,7 +8,7 @@
 
 #Heroku said no to Faker so naw
 #require 'faker'
-User.create! :name => 'Stinky', :parent => User.create!(:name => 'Squeeky')
+#User.create! :name => 'Stinky', :parent => User.create!(:name => 'Squeeky')
 
 
 User.create!(
