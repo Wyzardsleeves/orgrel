@@ -16,7 +16,7 @@ User.create!(
   last_name: "Murphy",
   title: "CEO",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -24,7 +24,7 @@ User.create!(
   last_name: "Libby",
   title: "CTO",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -32,7 +32,7 @@ User.create!(
   last_name: "Vedder",
   title: "CFO",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -40,7 +40,7 @@ User.create!(
   last_name: "Wallace",
   title: "VP of Public Relations",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -48,7 +48,7 @@ User.create!(
   last_name: "Belfort",
   title: "VP of Engineering",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -56,7 +56,7 @@ User.create!(
   last_name: "Gill",
   title: "Public Relations Manager",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -64,7 +64,7 @@ User.create!(
   last_name: "Goldstein",
   title: "Lead Software Engineer",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -72,7 +72,7 @@ User.create!(
   last_name: "Cook",
   title: "Software Engineer",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -80,7 +80,7 @@ User.create!(
   last_name: "Pardella",
   title: "Junior Software Engineer",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -88,7 +88,7 @@ User.create!(
   last_name: "Pardella",
   title: "Project Manager",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 User.create!(
@@ -96,7 +96,7 @@ User.create!(
   last_name: "Sanchez",
   title: "Software Engineer",
   description: "Description for production since heroku doesn't like Faker",#Faker::Lorem.paragraph(2, true)
-  minion: []
+  minion: ["empty"]
 )
 
 puts "Seed completed!"
