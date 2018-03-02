@@ -1,7 +1,7 @@
 module Api
   module V1
     class UsersController < ApplicationController
-      
+
       def index
         users = User.order('created_at DESC')
         render json: {status: 'Success', message: 'Loaded users', data:users},status: :ok
@@ -40,7 +40,7 @@ module Api
 
       private
       def user_params
-        params.permit(:first_name, :last_name, :description, :title)
+        params.permit(:first_name, :last_name, :description, :title, :minion)
       end
 
       #Exports json

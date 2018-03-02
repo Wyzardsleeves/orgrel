@@ -3,6 +3,7 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   validates :description, presence: true
   validates :title, presence: true
+  validates :minion, presence: true
 
   #has_ancestry
 
