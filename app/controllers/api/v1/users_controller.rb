@@ -6,7 +6,7 @@ module Api
 
 
       def index
-        users = User.order('created_at DESC')
+        users = User.order('created_at ASC')
         render json: {status: 'Success', message: 'Loaded users', data:users},status: :ok
       end
 
