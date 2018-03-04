@@ -2,7 +2,7 @@ module Api
   module V1
     class UsersController < ApplicationController
       skip_before_action :verify_authenticity_token, only: [:create]
-      #skip_before_action :some_custom_action, except: [:new]
+      skip_before_action :create, except: [:new]
 
       def index
         users = User.order('created_at ASC')
