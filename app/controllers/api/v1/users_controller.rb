@@ -1,8 +1,7 @@
-#skip_before_action :verify_authenticity_token
 module Api
   module V1
     class UsersController < ApplicationController
-      
+
       def index
         users = User.order('created_at ASC')
         render json: {status: 'Success', message: 'Loaded users', data:users},status: :ok
@@ -14,6 +13,7 @@ module Api
       end
 
       def create
+        skip_before_action :verify_authenticity_token
         user = User.new(user_params)
 
         if user.save

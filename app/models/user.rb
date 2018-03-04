@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  skip_before_action :verify_authenticity_token
   
   validates :first_name, presence: true
   validates :last_name, presence: true
