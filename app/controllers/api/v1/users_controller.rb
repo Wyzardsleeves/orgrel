@@ -1,7 +1,7 @@
 module Api
   module V1
     class UsersController < ApplicationController
-      #skip_before_action :verify_authenticity_token, only: [:create]
+      skip_before_action :verify_authenticity_token, only: [:create]
       #skip_before_action :create, except: [:new]
 
       def index
@@ -42,7 +42,7 @@ module Api
 
       private
       def user_params
-        params.permit(:first_name, :last_name, :description, :title, :minion)
+        params.permit(:first_name, :last_name, :description, :title) #, :minion)
       end
 
       #Exports json
