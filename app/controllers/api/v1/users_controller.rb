@@ -1,8 +1,6 @@
 module Api
   module V1
     class UsersController < ApplicationController
-      skip_before_action :verify_authenticity_token, only: [:create]
-      #skip_before_action :create, except: [:new]
 
       def index
         users = User.order('created_at ASC')
@@ -42,7 +40,7 @@ module Api
 
       private
       def user_params
-        params.permit(:first_name, :last_name, :description, :title) #, :minion)
+        params.permit(:first_name, :last_name, :description, :title, :minion)
       end
 
       #Exports json
@@ -50,6 +48,7 @@ module Api
         data = User.all.to_json #may not need this
         send_data data, :type => 'application/json; header=present', :disposition => "attachment; filename=users.json"
       end
+
     end
   end
 end
