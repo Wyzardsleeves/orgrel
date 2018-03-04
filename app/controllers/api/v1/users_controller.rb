@@ -1,6 +1,8 @@
 module Api
   module V1
     class UsersController < ApplicationController
+      skip_before_action :verify_authenticity_token, only: [:create]
+      skip_before_action :some_custom_action, except: [:new]
 
       def index
         users = User.order('created_at ASC')
@@ -13,7 +15,6 @@ module Api
       end
 
       def create
-        skip_before_action :verify_authenticity_token
         user = User.new(user_params)
 
         if user.save
